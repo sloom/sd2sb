@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>SwitchBot Toggle</title>
+    <link rel="stylesheet" href="send-command.css" />
+  </head>
+  <body>
+    <section>
+      <label>
+        Token
+        <input id="token" type="password" autocomplete="off" placeholder="SwitchBot token" />
+      </label>
+      <label>
+        Secret
+        <input id="secret" type="password" autocomplete="off" placeholder="SwitchBot secret" />
+      </label>
+    </section>
+
+    <section>
+      <label>
+        Device
+        <span class="device-picker">
+          <button id="deviceSelect" class="select-button" type="button" aria-expanded="false" aria-haspopup="listbox">
+            Manual device ID
+          </button>
+          <span id="deviceOptions" class="device-options" role="listbox" hidden></span>
+        </span>
+      </label>
+      <button id="refreshDevices" type="button">Refresh devices</button>
+      <p id="deviceStatus" aria-live="polite"></p>
+      <label>
+        Device ID
+        <input id="deviceId" type="text" autocomplete="off" />
+      </label>
+    </section>
+
+    <script src="devices.js"></script>
+    <script src="send-command.js"></script>
+  </body>
+</html>

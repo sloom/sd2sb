@@ -1,0 +1,4 @@
+.env
+.switchbot/
+node_modules/
+org.gakuya.sd2sb.sdPlugin/logs/

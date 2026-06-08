@@ -1,0 +1,87 @@
+{
+  "$schema": "https://schemas.elgato.com/streamdeck/plugins/manifest.json",
+  "Actions": [
+    {
+      "Icon": "imgs/action",
+      "Name": "Send Command",
+      "States": [
+        {
+          "Image": "imgs/action",
+          "TitleAlignment": "middle"
+        }
+      ],
+      "Tooltip": "Send a SwitchBot command.",
+      "UUID": "org.gakuya.sd2sb.send-command",
+      "PropertyInspectorPath": "ui/send-command.html",
+      "VisibleInActionsList": true
+    },
+    {
+      "Icon": "imgs/action",
+      "Name": "Turn On",
+      "States": [
+        {
+          "Image": "imgs/action",
+          "TitleAlignment": "middle"
+        }
+      ],
+      "Tooltip": "Send a SwitchBot turnOn command.",
+      "UUID": "org.gakuya.sd2sb.turn-on",
+      "PropertyInspectorPath": "ui/turn-on.html",
+      "VisibleInActionsList": true
+    },
+    {
+      "Icon": "imgs/action",
+      "Name": "Turn Off",
+      "States": [
+        {
+          "Image": "imgs/action",
+          "TitleAlignment": "middle"
+        }
+      ],
+      "Tooltip": "Send a SwitchBot turnOff command.",
+      "UUID": "org.gakuya.sd2sb.turn-off",
+      "PropertyInspectorPath": "ui/turn-off.html",
+      "VisibleInActionsList": true
+    },
+    {
+      "Icon": "imgs/action",
+      "Name": "Toggle",
+      "States": [
+        {
+          "Image": "imgs/action",
+          "TitleAlignment": "middle"
+        }
+      ],
+      "Tooltip": "Alternate SwitchBot turnOn and turnOff commands.",
+      "UUID": "org.gakuya.sd2sb.toggle",
+      "PropertyInspectorPath": "ui/toggle.html",
+      "VisibleInActionsList": true
+    }
+  ],
+  "Author": "gakuya.org",
+  "Category": "sd2sb",
+  "CategoryIcon": "imgs/plugin",
+  "CodePath": "bin/plugin.js",
+  "Description": "Send SwitchBot API commands from Stream Deck.",
+  "Icon": "imgs/plugin",
+  "Name": "sd2sb",
+  "Nodejs": {
+    "Version": "24"
+  },
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "10.15"
+    },
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "SDKVersion": 2,
+  "Software": {
+    "MinimumVersion": "7.1"
+  },
+  "UUID": "org.gakuya.sd2sb",
+  "Version": "0.1.0.0"
+}

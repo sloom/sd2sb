@@ -1,0 +1,1 @@
+window.SD2SB_SAVED_DEVICES = [];
